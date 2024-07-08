@@ -1,0 +1,70 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+      <h1 class="display-4 mb-4">
+        Sistema de Cadastro de Clientes Carpe Diem
+      </h1>
+      <p class="lead">
+        Este sistema foi projetado para ajudar a organizar
+        o cadastro de usuários da academia Carpe Diem
+      </p>
+      <p>
+        Funções:
+      </p>
+      <ul class="list-group mb-4">
+        <li class="list-group-item">Adicionar novo cliente</li>
+        <li class="list-group-item">Visualizar clientes existentes</li>
+        <li class="list-group-item">Atualizar situação do cadastro (em hiato, ativado, desativado, etc...)</li>
+
+      </ul>
+      <p class="lead">
+        Organize agora os clientes cadastrados na sua academia!!!
+      </p>
+      <!-- Link para informações da academia -->
+      <a class="btn btn-primary" [routerLink]="['/informacoes-academia']">
+        Informações da Academia
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Estilo para o corpo da página */
+  body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+  }
+
+  /* Estilo para o container principal */
+  .container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para o título principal */
+  h1 {
+    color: #007bff;
+    font-weight: 300;
+  }
+
+  /* Estilo para os itens da lista */
+  .list-group-item {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Estilo de hover para os itens da lista */
+  .list-group-item:hover {
+    background-color: #e2e6ea;
+  }
+
+  /* Estilo para parágrafos de destaque */
+  p.lead {
+    font-size: 1.2rem;
+  }
+</style>

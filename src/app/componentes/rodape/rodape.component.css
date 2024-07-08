@@ -1,0 +1,12 @@
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 20px; /* Reduzi o padding para 10px no topo e na base, e mantive 20px nos lados direito e esquerdo */
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #6c757d;
+}

@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <h2>Informações da Academia</h2>
+
+  <!-- Horários de Funcionamento -->
+  <h3>Horários de Funcionamento:</h3>
+  <ul>
+    <li>Segunda: {{ horariosFuncionamento.segunda }}</li>
+    <li>Terça: {{ horariosFuncionamento.terca }}</li>
+    <li>Quarta: {{ horariosFuncionamento.quarta }}</li>
+    <li>Quinta: {{ horariosFuncionamento.quinta }}</li>
+    <li>Sexta: {{ horariosFuncionamento.sexta }}</li>
+    <li>Sábado: {{ horariosFuncionamento.sabado }}</li>
+    <li>Domingo: {{ horariosFuncionamento.domingo }}</li>
+  </ul>
+
+  <!-- Endereço -->
+  <h3>Endereço:</h3>
+  <p>{{ endereco }}</p>
+
+  <!-- Serviços Oferecidos -->
+  <h3>Serviços Oferecidos:</h3>
+  <ul>
+    <li *ngFor="let servico of servicosOferecidos">{{ servico }}</li>
+  </ul>
+
+  <!-- Contato -->
+  <h3>Contato:</h3>
+  <p>Telefone: {{ contato.telefone }}</p>
+  <p>Email: {{ contato.email }}</p>
+  <p>Site: <a href="http://{{ contato.site }}" target="_blank">{{ contato.site }}</a></p>
+</div>
